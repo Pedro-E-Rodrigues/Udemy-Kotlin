@@ -1,19 +1,26 @@
 //if and else
-fun maioridade(idade: Int) {
-    if (idade >= 18) {
-        println("Maior de idade")
+fun calculabonus(cargo: String, salario: Float): Float {
+//Gerente Junior, Gerente Senior, Coordenador
+
+    val bonus: Float
+    if (cargo == "Coordenador") {
+        bonus = salario * 1.2f
+    } else if (cargo == "Gerente Junior") {
+        bonus = salario * 1.5f
     } else {
-        println("Menor de idade")
+        bonus = salario * 2f
     }
+    return bonus
+
 
 }
 
 
 fun main() {
 
-    maioridade(18)
-    maioridade(16)
-    maioridade(45)
+    println(calculabonus("Coordenador", 1000f))
+    println(calculabonus("Gerente Junior", 1000f))
+    println(calculabonus("Gerente Senior", 1000f))
 
 }
 
