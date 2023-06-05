@@ -1,3 +1,5 @@
+import java.lang.NullPointerException
+
 //if and else
 fun calculabonus(cargo: String, salario: Float): Float {
 //Gerente Junior, Gerente Senior, Coordenador
@@ -18,9 +20,14 @@ fun calculabonus(cargo: String, salario: Float): Float {
 
 fun main() {
 
-    println(calculabonus("Coordenador", 1000f))
-    println(calculabonus("Gerente Junior", 1000f))
-    println(calculabonus("Gerente Senior", 1000f))
+//    println(calculabonus("Coordenador", 1000f))
+//    println(calculabonus("Gerente Junior", 1000f))
+//    println(calculabonus("Gerente Senior", 1000f))
 
+
+//Operador Elvis "?":
+    val test: Int? = null
+    val op: Int = test ?: 100
+    println(op)
 }
 
