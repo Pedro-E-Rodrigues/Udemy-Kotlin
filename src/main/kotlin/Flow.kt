@@ -1,15 +1,9 @@
+fun main() {
 
-
-fun main () {
-//for - loop
-//loop infinito
-
-    val str = "Pedro Emanuel"
-    for (c in str) {
-        //println("$c ")
-    }
-    for (i in 0..100 step 5) {
-        print("$i ")
-    }
+    var l: Int = 10
+    do {
+        println(l)
+        l += 10
+    } while (l <= 100)
 
 }
