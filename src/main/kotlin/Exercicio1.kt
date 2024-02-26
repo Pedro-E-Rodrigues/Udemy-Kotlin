@@ -9,6 +9,7 @@
 //h. Rode seu programa de maneira que não tenha erros de compilação ou execução.
 fun main() {
     var nome: String = "Pedro Emanuel de Brito Rodrigues"
+    var textnovalue: String
 
 
 }
