@@ -11,5 +11,5 @@ fun main() {
     var nome: String = "Pedro Emanuel de Brito Rodrigues"
     var textnovalue: String
 
-
+    val calcado: Byte = 41
 }
