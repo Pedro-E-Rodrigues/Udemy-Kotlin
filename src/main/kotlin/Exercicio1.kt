@@ -12,4 +12,11 @@ fun main() {
     var textnovalue: String
 
     val calcado: Byte = 41
+    println(calcado)
+
+    val PIB: Long =1869000000000
+    println(PIB)
+
+    val pop: Int =211000000
+
 }
