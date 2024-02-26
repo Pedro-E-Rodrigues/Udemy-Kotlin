@@ -14,9 +14,10 @@ fun main() {
     val calcado: Byte = 41
     println(calcado)
 
-    val PIB: Long =1869000000000
+    val PIB: Long = 1869000000000
     println(PIB)
 
-    val pop: Int =211000000
+    val pop: Int = 211000000
 
+    println("R$ ${PIB/pop}")
 }
