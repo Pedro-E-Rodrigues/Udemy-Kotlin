@@ -13,8 +13,7 @@
 //a. Não deve existir lógica dentro da função main. Deve ser usada somente como ponto de entrada.
 //b. Escrever uma função para a troca de letras e impressão do valor final.
 //c. String final deve estar com todas as letras minúsculas.
-//Sobre as funções criadas nos exercícios 2, 3 e 4. É possível transformá-las em funções de uma única linha? Se
-//sim, transforme-as
+
 fun converte(anos: Int) {
     println("$anos anos equivalem a:")
     println("${anos * 12} meses")
@@ -33,13 +32,19 @@ fun cubo(n: Int): Int {
     return n * n * n
 }
 
-fun milhas(milhas: Float): Float{
+fun milhas(milhas: Float): Float {
     return milhas * 1.6f
 }
+
+fun ex5(str: String) {
+    println( str.replace("A","x").replace("a","x").lowercase())
+
+}
+
 fun main() {
     //converte(2)
     letras("asdafasgagsahhaghasgha")
     cubo(3)
     milhas(100f)
-
+    ex5("aAaAAAAaaAaAAA")
 }
