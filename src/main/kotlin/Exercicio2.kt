@@ -42,9 +42,9 @@ fun ex5(str: String) {
 }
 
 fun main() {
-    //converte(2)
-    letras("asdafasgagsahhaghasgha")
-    cubo(3)
-    milhas(100f)
-    ex5("aAaAAAAaaAaAAA")
+    converte(2)
+    println( letras("asdafasgagsahhaghasgha"))
+    println( cubo(3))
+    println( milhas(100f))
+    println( ex5("aAaAAAAaaAaAAA"))
 }
