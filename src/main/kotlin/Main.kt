@@ -1,33 +1,20 @@
-import java.lang.NullPointerException
 
-//if and else
-fun calculabonus(cargo: String, salario: Float): Float {
-//Gerente Junior, Gerente Senior, Coordenador
 
-    val bonus: Float
-    if (cargo == "Coordenador") {
-        bonus = salario * 1.2f
-    } else if (cargo == "Gerente Junior") {
-        bonus = salario * 1.5f
-    } else {
-        bonus = salario * 2f
+fun bonus(cargo: String): Float {
+    var bonus = 0f
+    if (cargo == "Gerente") {
+        bonus = 2000f
+    } else if (cargo == "Coordenador") {
+        bonus = 1500f
+    } else if (cargo == "Engenheiro de software") {
+        bonus = 1000f
+    } else if (cargo == "Estagiario") {
+
     }
     return bonus
-
-
 }
-
 
 fun main() {
-
-//    println(calculabonus("Coordenador", 1000f))
-//    println(calculabonus("Gerente Junior", 1000f))
-//    println(calculabonus("Gerente Senior", 1000f))
-
-
-//Operador Elvis "?":
-    val test: Int? = null
-    val op: Int = test ?: 100
-    println(op)
+    val bonus = bonus("Gerente")
+    println(bonus)
 }
-
