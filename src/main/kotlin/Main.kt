@@ -1,4 +1,4 @@
-fun exc2(cargo: String, experiencia: Int): Float {
+fun bonus(cargo: String, experiencia: Int): Float {
     var bonus = 0f
     if (cargo == "Gerente") {
         if (experiencia < 2) {
@@ -12,12 +12,13 @@ fun exc2(cargo: String, experiencia: Int): Float {
         } else {
             bonus = 1800f
         }
-    } else if (cargo == "Engenheiro de software") {
+    } else if (cargo == "Engenheiro") {
         bonus = 1000f
     } else if (cargo == "Estagiario") {
         bonus = 500f
     }
     return bonus
+
 }
 
 fun exc1(cargo: String): Float {
@@ -26,17 +27,19 @@ fun exc1(cargo: String): Float {
         bonus = 2000f
     } else if (cargo == "Coordenador") {
         bonus = 1500f
-    } else if (cargo == "Engenheiro de software") {
+    } else if (cargo == "Engenheiro") {
         bonus = 1000f
     } else if (cargo == "Estagiario") {
-
+        bonus = 500f
     }
     return bonus
+
 }
 
 fun main() {
-    //val bonus = bonus("Gerente", 3)
-    //if (bonus == 0f) {
-      //  println("Cargo Incorreto")
-    //}
+    val bonus = bonus("Gerente", 3)
+    println(bonus)
+
+    val teste= exc1("Estagiario")
+    println(teste)
 }
