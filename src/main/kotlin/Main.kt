@@ -36,10 +36,23 @@ fun exc1(cargo: String): Float {
 
 }
 
+fun bonuswhen(cargo: String): Float {
+    return when (cargo) {
+        "Gerente" -> 2000f
+        "Coordenador" -> 1500f
+        "Engenheiro" -> 1000f
+        "Estagiario" -> 500f
+        else -> 0f
+    }
+}
+
 fun main() {
     val bonus = bonus("Gerente", 3)
     println(bonus)
 
-    val teste= exc1("Estagiario")
+    val teste = exc1("Estagiario")
     println(teste)
+
+    val bonuswhen = bonuswhen("Engenheiro")
+    println(bonuswhen)
 }
