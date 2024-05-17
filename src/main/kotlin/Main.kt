@@ -1,4 +1,4 @@
-fun triangulo(){
+fun triangulo() {
     println("informe o lado 1 do triangulo:")
     val lado1 = readln()
 
@@ -40,8 +40,43 @@ fun quadrado() {
     }
 }
 
+fun portaria() {
+    println("Inform your age:")
+    val idade = readln()
+
+    if (idade != null && idade != "") {
+        val x = idade.toInt()
+
+        if (x < 18) {
+            println("Negado. Menores de idade nao sao permitidos.")
+        } else if (x >= 18) {
+            println("Qual o seu tipo de convite?:")
+            val convite = readln()
+
+            if (convite != "comum" && convite != "premium" && convite != "luxo") {
+                println("Negado. Convite invalido.")
+
+            }
+            else{
+                println("Forneça o código do convite:")
+                val codigo = readln()
+
+                if (codigo != "XL" && codigo != "XT"){
+                    println("Negado. Convite invalido")
+                }
+                else {
+                    println("Welcome")
+                }
+            }
+
+
+        }
+
+    }
+}
 
 fun main() {
     //quadrado()
     //triangulo()
+    portaria()
 }
