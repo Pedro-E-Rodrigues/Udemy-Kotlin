@@ -41,7 +41,7 @@ fun quadrado() {
 }
 
 fun portaria() {
-    println("Inform your age:")
+    println("Informe sua idade:")
     val idade = readln()
 
     if (idade != null && idade != "") {
@@ -49,23 +49,27 @@ fun portaria() {
 
         if (x < 18) {
             println("Negado. Menores de idade nao sao permitidos.")
+            return
         } else if (x >= 18) {
             println("Qual o seu tipo de convite?:")
             val convite = readln()
 
             if (convite != "comum" && convite != "premium" && convite != "luxo") {
                 println("Negado. Convite invalido.")
+                return
 
-            }
-            else{
+            } else {
                 println("Forneça o código do convite:")
-                val codigo = readln()
+                var codigo = readln()
 
-                if (codigo != "XL" && codigo != "XT"){
-                    println("Negado. Convite invalido")
-                }
-                else {
-                    println("Welcome")
+                if (codigo != null && codigo != "") {
+                    if (convite == "comum" && codigo.startsWith("XT")) {
+                        println("Welcome")
+                    } else if (convite == "premium" || convite == "luxo" && codigo.startsWith("XL")) {
+                        println("Welcome")
+                    } else {
+                        println("Negado. Convite invalido")
+                    }
                 }
             }
 
