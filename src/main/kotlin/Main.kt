@@ -1,5 +1,10 @@
 fun main(){
-    var s : String? = null
+   try {
+       var s : String? = null
 
-    println(s?.length)
+       println(s!!.length)
+   } catch (e: NullPointerException) {
+       println("Variavel nula!")
+   }
+    println("Fim")
 }
