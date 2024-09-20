@@ -1,16 +1,13 @@
 fun main(){
-   try {
-       var s : String? = null
-       println(s!!.length)
-       val a = 10/0
-   } catch (e: NullPointerException) {
-       println("Variavel nula!")
-   }
-    catch (e: ArithmeticException){
-        println("Impossivel dividir por zero")
+    val str : String? = null
+
+    if (str != null) {
+        str.lowercase()
+        str.length
     }
-    catch (e: Exception){
-        println("Generica")
+
+    str?.let {
+        it.lowercase()
+        it.length
     }
-    println("Fim")
 }
