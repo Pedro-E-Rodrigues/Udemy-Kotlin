@@ -1,13 +1,7 @@
 fun main(){
-    val str : String? = null
+    endereco(cidade = "caicó", rua = "Manuel felipe", estado = "RN" )
+}
 
-    if (str != null) {
-        str.lowercase()
-        str.length
-    }
+fun endereco(rua: String, cidade: String, estado: String, num: Int = 0){
 
-    str?.let {
-        it.lowercase()
-        it.length
-    }
 }
