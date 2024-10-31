@@ -2,10 +2,13 @@ fun main(){
     println(media(10f, 8f))
 }
 
-fun media(vararg notas: Float ): Float{
+fun <T> media(vararg notas: T ): Float{
     var soma = 0f
     for (n in notas){
-        soma += n
+        if (n is Float) {
+            soma += n
+        }
+
     }
     return (soma / notas.size)
 }
