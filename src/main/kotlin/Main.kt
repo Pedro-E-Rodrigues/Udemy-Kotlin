@@ -5,7 +5,7 @@ fun main (){
 
 }
 
-fun valores(value :Any): Unit{
-    //(Unit) é o tipo de retorno
+fun valores(value :Any): Nothing{
+    TODO("teste do nothing")
 
 }
