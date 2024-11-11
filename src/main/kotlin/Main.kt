@@ -1,11 +1,10 @@
+class Pessoa(val anoNascimento: Int)
+
 fun main (){
-    // Any, Unit, Nothing
+    // class - comportamentos e atributos
 
-
-
-}
-
-fun valores(value :Any): Nothing{
-    TODO("teste do nothing")
+    // classe (Instancia) objetos
+    var pessoa: Pessoa = Pessoa(2003)
 
 }
+
