@@ -1,30 +1,14 @@
-class Pessoa(val anoNascimento: Int, var nome: String) {
-    var documento: String = ""
-
-    constructor(anoNascimento: Int, nome: String, doc: String) : this(anoNascimento, nome)
-
-    fun acordar() {
-
-    }
-
-    fun dormir() {
-
-    }
+fun main(){
+     val f1: Forma = Forma(10,20)
+     val f2: Forma = Forma(10,20)
+    f1.equals(f2)
+    println(f1.toString())
+    println(f1.hashCode())
+    println("------------")
+    println(f2.toString())
+    println(f2.hashCode())
 }
 
-fun main() {
-    // class - comportamentos e atributos
 
-    // classe (Instancia) objetos
-    var pessoa: Pessoa = Pessoa(2003, "Pedro", doc = "2156416439")
-
-    //this - se refere ao objeto
-    pessoa.nome
-
-    pessoa.acordar()
-
-    pessoa.dormir()
-
-
-}
-
+class Forma(val a:Int,val b:Int)
+data class FormaData(val a: Int, val b: Int)
